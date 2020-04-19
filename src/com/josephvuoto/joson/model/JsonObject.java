@@ -64,6 +64,14 @@ public class JsonObject implements Json {
         }
     }
 
+    public void addEntry(String key, Object value) {
+        map.put(key, value);
+    }
+
+    public String buildJson() {
+        return this.toString();
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
